@@ -17,7 +17,7 @@
 
         <h2>Witaj ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Wyloguj</a></h2>
     </c:if>
-    <h4 class="text-center"><a href="${contextPath}/question/index">Rozwiąż test</a></h4>
+    <h4 class="text-center"><a href="${contextPath}/test/sample-test">Rozwiąż test</a></h4>
 </div>
 </body>
 </html>

@@ -14,6 +14,10 @@ INSERT INTO question(id, content)
 VALUES (2, 'Wybierz zdanie opisujące grąd:');
 INSERT INTO question(id, content)
 VALUES (3, 'Wybierz czynnik, który nie jest przyczyną powodzi w Polsce:');
+INSERT INTO question(id, content)
+VALUES (4, 'Rozpoznaj glebę po opisie: Wykształciła się bezpośrednio na skałach wapiennych i gipsowych. Odznacza się bogatym poziomem próchniczym i dużą żyznością.');
+INSERT INTO question(id, content)
+VALUES (5, 'Wybierz zdanie opisujące olsy:');
 
 
 CREATE TABLE answer
@@ -50,4 +54,21 @@ INSERT INTO answer(id, content, question_id, correct)
 VALUES (11, 'Podniesienie poziomy wody w ujściu rzeki (tzw. cofka).', 3, 0);
 INSERT INTO answer(id, content, question_id, correct)
 VALUES (12, 'Długotrwałe, intensywne deszcze.', 3, 0);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (13, 'Mada', 4, 0);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (14, 'Czarnoziem', 4, 0);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (15, 'Gleba górska', 4, 0);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (16, 'Rędzina', 4, 1);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (17, 'Lasy z przewagą drzew iglastych', 5, 0);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (18, 'Porastają one piaszczyste obszary, na których występują gleby bielicowe.', 5, 0);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (19, 'Lasy liściaste z przewagą dębu i grabu.', 5, 0);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (20, 'Lasy występujące w bagiennych obniżeniach.', 5, 1);
+
 

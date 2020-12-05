@@ -9,17 +9,6 @@ import java.util.Set;
 public class User {
 
     private Long id;
-
-    @Size(min = 2)
-    private String firstName;
-
-    @Size(min = 2)
-    private String lastName;
-
-    @Column(unique = true)
-    @Size(min = 2)
-    private String email;
-
     @Size(min = 2)
     private String password;
     private String passwordConfirm;
