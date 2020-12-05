@@ -10,26 +10,23 @@ import pl.orliksebastian.quizapp.services.QuestionService;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("question")
+@RequestMapping("test")
 public class QuestionController {
 
-
     private final QuestionService questionService;
-
     public QuestionController(QuestionService questionService) {
         this.questionService = questionService;
     }
 
 
-    @RequestMapping(value = "index", method = RequestMethod.GET)
-    public String index(ModelMap modelMap) {
+    @RequestMapping(value = "sample-test", method = RequestMethod.GET)
+    public String prepareQuestions(ModelMap modelMap) {
         modelMap.put("questions", questionService.findAll());
-        return "question/index";
+        return "test/sample-test";
     }
 
-    @RequestMapping(value = "submit", method = RequestMethod.POST)
-    public String submit(HttpServletRequest request) {
-//        if (request.authenticate(request)) {
+    @RequestMapping(value = "result", method = RequestMethod.POST)
+    public String result(HttpServletRequest request) {
             int score = 0;
             String[] questionIds = request.getParameterValues("questionId");
             for (String questionId : questionIds) {
@@ -38,9 +35,7 @@ public class QuestionController {
                     score++;
                 }
             }
-
             request.setAttribute("score", score);
-//        }
-        return "question/result";
+        return "test/result";
     }
 }

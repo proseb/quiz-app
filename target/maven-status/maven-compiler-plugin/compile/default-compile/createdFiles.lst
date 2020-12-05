@@ -1,5 +1,6 @@
 pl/orliksebastian/quizapp/controller/UserController.class
 pl/orliksebastian/quizapp/entity/Question.class
+pl/orliksebastian/quizapp/QuizAppApplication$1.class
 pl/orliksebastian/quizapp/services/UserServiceImpl.class
 pl/orliksebastian/quizapp/services/QuestionServiceImpl.class
 pl/orliksebastian/quizapp/entity/Role.class
