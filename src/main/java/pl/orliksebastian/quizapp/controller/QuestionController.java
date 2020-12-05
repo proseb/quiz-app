@@ -13,9 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("question")
 public class QuestionController {
 
-
     private final QuestionService questionService;
-
     public QuestionController(QuestionService questionService) {
         this.questionService = questionService;
     }

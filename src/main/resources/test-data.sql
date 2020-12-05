@@ -1,3 +1,6 @@
+INSERT INTO role(id, name)
+VALUES (1, 'USER');
+
 CREATE TABLE question
 (
     id      INT AUTO_INCREMENT,
@@ -6,13 +9,12 @@ CREATE TABLE question
 );
 
 INSERT INTO question(id, content)
-VALUES (1, 'Pytanie 1');
+VALUES (1, 'Wybierz podpunkt zawierający prawidłową charakterystykę Morza Bałtyckiego:');
 INSERT INTO question(id, content)
-VALUES (2, 'Pytanie 2');
+VALUES (2, 'Wybierz zdanie opisujące grąd:');
 INSERT INTO question(id, content)
-VALUES (3, 'Pytanie 3');
-INSERT INTO question(id, content)
-VALUES (4, 'Pytanie 4');
+VALUES (3, 'Wybierz czynnik, który nie jest przyczyną powodzi w Polsce:');
+
 
 CREATE TABLE answer
 (
@@ -25,25 +27,27 @@ CREATE TABLE answer
 );
 
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (1, 'Odpowiedź 1.1', 1, 0);
+VALUES (1, 'Młode, bardzo płytkie (maksymalna głębokość 52 m) morze śródlądowe.', 1, 0);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (2, 'Odpowiedź 1.2', 1, 1);
+VALUES (2, 'Młode morze międzykontynentalne o średnim zasoleniu 35‰.', 1, 0);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (3, 'Odpowiedź 2.1', 2, 1);
+VALUES (3, 'Chłodne morze szelfowe o średnim zasoleniu 7,5‰.', 1, 1);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (4, 'Odpowiedź 2.2', 2, 0);
+VALUES (4, 'Chłodne morze przybrzeżne o słabo rozwiniętej linii brzegowej.', 1, 0);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (5, 'Odpowiedź 2.3', 2, 0);
+VALUES (5, 'Lasy z przewagą drzew iglastych.', 2, 0);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (6, 'Odpowiedź 3.1', 3, 0);
+VALUES (6, 'Porastają one piaszczyste obszary, na których występują gleby bielicowe.', 2, 0);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (7, 'Odpowiedź 3.2', 3, 1);
+VALUES (7, 'Lasy liściaste z przewagą dębu i grabu.', 2, 1);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (8, 'Odpowiedź 4.1', 4, 1);
+VALUES (8, 'Lasy występujące w bagiennych obniżeniach.', 2, 0);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (9, 'Odpowiedź 4.2', 4, 0);
+VALUES (9, 'Wiosenne roztopy.', 3, 0);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (10, 'Odpowiedź 4.3', 4, 0);
+VALUES (10, 'Zatory na rzekach wschodniej Europy.', 3, 1);
 INSERT INTO answer(id, content, question_id, correct)
-VALUES (11, 'Odpowiedź 4.4', 4, 0);
+VALUES (11, 'Podniesienie poziomy wody w ujściu rzeki (tzw. cofka).', 3, 0);
+INSERT INTO answer(id, content, question_id, correct)
+VALUES (12, 'Długotrwałe, intensywne deszcze.', 3, 0);
 
